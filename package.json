@@ -1,0 +1,25 @@
+{
+    "name": "reqlang",
+    "displayName": "reqlang",
+    "description": "Reqlang syntax highlighting ",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "req",
+            "aliases": ["reqlang", "req"],
+            "extensions": [".req"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "req",
+            "scopeName": "source.req",
+            "path": "./syntaxes/req.tmLanguage.json"
+        }]
+    }
+}
